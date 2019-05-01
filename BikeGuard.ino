@@ -15,7 +15,7 @@ static const char *psk_key = "c7229ac4fe1da7b7168e46bf05125671";
 
 /** This is the Breakout SDK top API */
 Breakout *breakout = &Breakout::getInstance();
-
+//poop
 #define ULTRASONIC_PIN  (38)
 #define ROTARY_ANGLE_PIN  (WIOLTE_20)
 #define INTERVAL        (1000)
@@ -101,7 +101,7 @@ void loop()
   //SerialUSB.println("[cm]");
     carCheck = 1;
     SerialUSB.println("Bike is now locked!");
-  
+
   }else if(distance > 3.8 && carCheck == 1 ) {
      // Send message to server how long car been parked
     /*SerialUSB.print("Bike is now unlock");
@@ -118,7 +118,7 @@ void loop()
     //SerialUSB.println("No car here "); // Wait 1 minute
     //SerialUSB.println("*go into Power Saving Mode, wait for one minute before next paging cycle*");
     counter = 0;
-    
+
   digitalWrite(WIOLTE_D20, LOW);
   }
   breakout->spin();
