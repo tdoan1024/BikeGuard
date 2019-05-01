@@ -15,7 +15,7 @@ static const char *psk_key = "c7229ac4fe1da7b7168e46bf05125671";
 
 /** This is the Breakout SDK top API */
 Breakout *breakout = &Breakout::getInstance();
-//poops
+//poop
 #define ULTRASONIC_PIN  (38)
 #define ROTARY_ANGLE_PIN  (WIOLTE_20)
 #define INTERVAL        (1000)
