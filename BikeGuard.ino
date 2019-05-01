@@ -101,7 +101,7 @@ void loop()
   //SerialUSB.println("[cm]");
     carCheck = 1;
     SerialUSB.println("Bike is now locked!");
-  
+
   }else if(distance > 3.8 && carCheck == 1 ) {
      // Send message to server how long car been parked
     /*SerialUSB.print("Bike is now unlock");
@@ -118,7 +118,7 @@ void loop()
     //SerialUSB.println("No car here "); // Wait 1 minute
     //SerialUSB.println("*go into Power Saving Mode, wait for one minute before next paging cycle*");
     counter = 0;
-    
+
   digitalWrite(WIOLTE_D20, LOW);
   }
   breakout->spin();
